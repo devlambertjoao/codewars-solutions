@@ -1,3 +1,23 @@
+# https://www.codewars.com/kata/5469e0798a3502f4a90005c9
+# Rotate an array ->
+# data is the array, n is the numbers to rotate
+# Example:
+# with array [1, 2, 3, 4, 5]
+
+# n = 1      =>    [5, 1, 2, 3, 4]
+# n = 2      =>    [4, 5, 1, 2, 3]
+# n = 3      =>    [3, 4, 5, 1, 2]
+# n = 4      =>    [2, 3, 4, 5, 1]
+# n = 5      =>    [1, 2, 3, 4, 5]
+# n = 6      =>    [5, 1, 2, 3, 4]
+# n = 0      =>    [1, 2, 3, 4, 5]
+# n = -1     =>    [2, 3, 4, 5, 1]
+# n = -2     =>    [3, 4, 5, 1, 2]
+# n = -3     =>    [4, 5, 1, 2, 3]
+# n = -4     =>    [5, 1, 2, 3, 4]
+# n = -5     =>    [1, 2, 3, 4, 5]
+# n = -6     =>    [2, 3, 4, 5, 1]
+
 def positiveN(data, n, arr):
     if(n >= 0):
         for index, item in enumerate(data):
